@@ -5,7 +5,7 @@ form.addEventListener('submit', (event) => {
   const songName = document.getElementById('songName').value;
 
   // ส่งข้อมูลไปยังเซิร์ฟเวอร์ (ตัวอย่าง: ส่งไปยังไฟล์ request.php)
-  fetch('/request.php', {
+  fetch('song.html', {
     method: 'POST',
     body: JSON.stringify({ songName })
   })
